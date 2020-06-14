@@ -117,7 +117,7 @@ void audio_speaker_resume();
 void audio_speaker_stop();
 void audio_speaker_replay();
 
-int16_t *audio_speaker_read_from_flash(uint32_t addr, uint32_t length);
+//int16_t *audio_speaker_read_from_flash(uint32_t addr, uint32_t length);
 void audio_speaker_free_buf(int16_t *buf);
 
 #ifdef __cplusplus

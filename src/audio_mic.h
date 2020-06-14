@@ -89,8 +89,8 @@ void audio_mic_start();
 void audio_mic_stop();
 void audio_mic_clear();
 
-void audio_mic_save_to_flash(uint32_t addr, int16_t* save_buf, uint32_t length);
-
+//void audio_mic_save_to_flash(uint32_t addr, int16_t* save_buf, uint32_t length);
+void audio_mic_set_frame_length(uint16_t frame_length);
 
 #ifdef __cplusplus
 }

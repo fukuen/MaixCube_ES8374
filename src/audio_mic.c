@@ -235,3 +235,9 @@ void audio_mic_clear()
 //{
 //    w25qxx_write_data(addr, (uint8_t *)save_buf, sizeof(int16_t) * length);
 //}
+
+void audio_mic_set_frame_length(uint16_t frame_length)
+{
+    audio_mic_t *mic = &audio_mic;
+    mic->recv_frame_length = frame_length;
+}
